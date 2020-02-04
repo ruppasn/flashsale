@@ -1,0 +1,32 @@
+##### Database Config ######################
+spring:
+  jpa:
+    hibernate:
+      show_sql: true
+      format_sql: true
+      ddl-auto: update
+      use_sql_comments: true
+      cache:
+        use_second_level_cache: true
+      connection:
+        provider_class: org.hibernate.connection.C3P0ConnectionProvider
+      c3p0:
+        max_size: 20
+        min_size: 5
+        acquire_increment: 5
+        timeout: 1800
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/flashsale"
+    username: postgres
+    password: mysecretpassword
+
+##### logging ############################
+logging:
+  level:
+    org:
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate: DEBUG
+            StatementCreatorUtils: TRACE
