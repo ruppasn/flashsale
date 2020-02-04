@@ -1,7 +1,7 @@
-### Flash Sale API
+## Flash Sale API
 
 -----------------------
-#### Problem statement
+### Problem statement
 Design a robust & concurrent java application with Flash Sale Functionality and expose API (UI not required).
 
 The following conditions holding true in your solution :
@@ -13,14 +13,14 @@ The following conditions holding true in your solution :
 
 * Only registered users allowed to make a purchase.
 
-##### Assumptions
+### Assumptions
 * Customer details cannot be edited.
 * Customer has only one address.
 * Products are predefined hence no api required to manage products.
 * Customer must register before starting the flash sale and can order once in flash sale.
 * Database is designed specific to flash sale, excluded the e-comers site details.
 
-##### Tech Stack and Features
+### Tech Stack and Features
 * Spring boot
 * Gradle
 * JPA
@@ -31,7 +31,7 @@ The following conditions holding true in your solution :
 * PostgreSQL
 * Versioned Flash sale system API
 
-##### How to run the application:
+### How to run the application:
 * Start Redis and Postgres (here Docker containers are used for simplicity).
 
 ```shell script
@@ -55,7 +55,7 @@ To start application:
 ./gradlew bootRun
 ```
 
-##### Application flow and API:
+### Application flow and API:
 * Customer registers for flash sale 
     - ```/v1/customers``` - post
 * Admin starts flash sale 
@@ -70,7 +70,7 @@ To start application:
 
 Once application is started, access the API on Swagger UI using ```http://localhost:8080/swagger-ui.html```
 
-##### Development tips:
+### Development tips:
 * Created a spring boot application using spring initializer
 
 * Added support for Swagger UI and global error and exception handlers.
