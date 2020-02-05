@@ -54,9 +54,6 @@ public class FlashSaleManager {
     private ProductRepository productRepository;
 
     @Autowired
-    private CustomerRepository buyerRepository;
-
-    @Autowired
     private OrderRepository orderRepository;
 
     @Autowired

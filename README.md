@@ -25,6 +25,7 @@ The following conditions holding true in your solution :
 * Gradle
 * JPA
 * Swagger UI support
+* Mockito
 * Global Response and Exception format
 * Redis cache
 * C3P0 connection pool
@@ -55,6 +56,11 @@ To start application:
 ./gradlew bootRun
 ```
 
+To run test cases:
+```shell script
+./gradlew test
+```
+
 ### Application flow and API:
 * Customer registers for flash sale 
     - ```/v1/customers``` - post
@@ -70,7 +76,7 @@ To start application:
 
 Once application is started, access the API on Swagger UI using ```http://localhost:8080/swagger-ui.html```
 
-### Development tips:
+### Development Notes:
 * Created a spring boot application using spring initializer
 
 * Added support for Swagger UI and global error and exception handlers.
